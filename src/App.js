@@ -50,6 +50,7 @@ class App extends React.Component{
       <h2>Drag and Drop</h2>
       <div className="container-drag" style={{display:"flex"}}>
         <div className="wip" 
+          onDragOver={(e)=>this.onDragOver(e)}
           onDrop={(e)=>this.onDrop(e, "wip")}
           style={{marginRight:"10px"}}>
           <span>WIP</span>
